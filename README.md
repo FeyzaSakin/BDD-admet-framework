@@ -2,7 +2,16 @@
 
 ## Overview
 
-This repository contains JavaScript exercises for part 2 paper assignment.
+This repository contains exercises completed for the Part 2 paper internship assignment.
+
+* JavaScript Exercise:
+    * `javascript-exercises.js`: using three different functions; 
+        1. counts from 1-10 in a loop; 
+        2. counts even numbers in an array; 
+        3. finds the longest word from the choices: apple, grape, peach, elephant;
+* TypeScript Exercises:
+    * `typescript-exercise-one.ts`: creates three compounds with their names and smiles
+    * `typescript-exercise-two.ts`: shows an example of asynchronous execution
 
 ---
 ## File Structure
@@ -10,23 +19,29 @@ This repository contains JavaScript exercises for part 2 paper assignment.
 ```text
 BDD-admet-framework/
 ├── part2_paper_exercises/
-│   └── javascript-exercises.js
+│   ├── JavaScript Exercise/
+│   │   └── javascript-exercises.js
+│   │
+│   └── TypeScript Exercises/
+│       ├── typescript-exercise-one.ts
+│       └── typescript-exercise-two.ts
+│
 └── README.md
 ```
 
 ---
 ## Running the Project
 
-### The javascript-exercises.js
+### 1. javascript-exercises.js
 
-#### 1. To Run the javascript-exercises.js:
+#### 1. To run the javascript-exercises.js:
 
-#### For Windows:
+##### For Windows:
 ```text
-node .\part2_paper_exercises\java-exercises.js
+node '.\part2_paper_exercises\JavaScript Exercise\javascript-exercises.js'
 ```
 
-#### Output of javascript-exercises.js
+#### 2. Output of javascript-exercises.js
 
 ```text
 1.Starting counting: 
@@ -37,4 +52,32 @@ node .\part2_paper_exercises\java-exercises.js
 
 3.Starting finding the longest word: 
 The longest word: elephant
+```
+
+---
+
+### 2. typescript-exercise-one.ts
+
+#### 1. To run the typescript-exercise-one.ts:
+
+##### For Windows:
+```text
+node '.\part2_paper_exercises\TypeScript Exercises\typescript-exercise-one.ts'
+```
+
+---
+
+### 3. typescript-exercise-two.ts
+
+#### 1. To run the typescript-exercise-two.ts:
+
+##### For Windows:
+```text
+node '.\part2_paper_exercises\TypeScript Exercises\typescript-exercise-two.ts'
+```
+
+#### 2. Output of typescript-exercise-two.ts
+
+```text
+The molecule is aspirin.
 ```
