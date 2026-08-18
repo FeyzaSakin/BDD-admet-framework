@@ -1,0 +1,3 @@
+# Playwright / npm generated files; to not push them to the github; but to keep these files in the local PC
+node_modules/
+test-results/

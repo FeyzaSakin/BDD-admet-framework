@@ -13,7 +13,10 @@ This repository contains exercises completed for the Part 2 paper internship ass
     * `typescript-exercise-one.ts`: creates three compounds with their names and smiles
     * `typescript-exercise-two.ts`: shows an example of asynchronous execution
 * Playwright Exercises:
-    * `playwright-exercise.spec.ts`: verifies page titles at the Google and Gallaudet websites
+    * `playwright-exercise-one.spec.ts`: verifies page titles at the Google and Gallaudet websites
+    * `playwright-exercise-two.spec.ts`: copies "Ciao." after translating "Hello." in English on Google Translate
+    * `playwright-exercise-three.spec.ts`: using "getByPlaceholder()", it types "New York City" in AccuWeather webpage search bar
+    * `playwright-exercise-four.spec.ts`: using "locator()", it chooses "News" for the drop down option
 
 ---
 ## File Structure
@@ -28,11 +31,29 @@ BDD-admet-framework/
 │   │   ├── typescript-exercise-one.ts
 │   │   └── typescript-exercise-two.ts
 │   │
-│   └── Playwright Exercises/
+│   ├── Playwright Exercise 1/
+│   │   ├── .gitignore
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   └── playwright-exercise-one.spec.ts
+│   │
+│   ├── Playwright Exercise 2/
+│   │   ├── .gitignore
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   └── playwright-exercise-two.spec.ts
+│   │
+│   ├── Playwright Exercise 3/
+│   │   ├── .gitignore
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   └── playwright-exercise-three.spec.ts
+│   │
+│   └── Playwright Exercise 4/
 │       ├── .gitignore
 │       ├── package.json
 │       ├── package-lock.json
-│       └── playwright-exercise.spec.ts
+│       └── playwright-exercise-four.spec.ts
 │
 └── README.md
 ```
@@ -92,25 +113,25 @@ The molecule is aspirin.
 
 ---
 
-### 4. playwright-exercise.spec.ts
+### 4. playwright-exercise-one.spec.ts
 
-#### 1. To run the playwright-exercise.spec.ts:
+#### 1. To run the playwright-exercise-one.spec.ts:
 
 ##### For Windows:
 
 ###### 1. Headed
 ```text
-cd '.\part2_paper_exercises\Playwright Exercises\'
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 1'
 npx playwright test --headed    
 ```
 
 ###### 2. Without Headed
 ```text
-cd '.\part2_paper_exercises\Playwright Exercises\'
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 1'
 npx playwright test
 ```
 
-#### 2. Output of playwright-exercise.spec.ts With Headed
+#### 2. Output of playwright-exercise-one.spec.ts With Headed
 
 ```text
 
@@ -120,4 +141,97 @@ Running 2 tests using 1 worker
   ✓  2 playwright-exercise.spec.ts:15:5 › second test (4.0s)
 
   2 passed (6.9s)
+```
+
+---
+
+### 5. playwright-exercise-two.spec.ts
+
+#### 1. To run the playwright-exercise-two.spec.ts:
+
+##### For Windows:
+
+###### 1. Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 2'
+npx playwright test --headed    
+```
+
+###### 2. Without Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 2'
+npx playwright test
+```
+
+#### 2. Output of playwright-exercise-two.spec.ts With Headed
+
+```text
+
+Running 1 test using 1 worker
+
+  ✓  1 playwright-exercise-two.spec.ts:6:5 › translation test (10.5s)
+
+  1 passed (11.6s)
+```
+
+---
+
+### 6. playwright-exercise-three.spec.ts
+
+#### 1. To run the playwright-exercise-three.spec.ts:
+
+##### For Windows:
+
+###### 1. Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 3'
+npx playwright test --headed    
+```
+
+###### 2. Without Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 3'
+npx playwright test
+```
+
+#### 2. Output of playwright-exercise-three.spec.ts With Headed
+
+```text
+
+Running 1 test using 1 worker
+
+  ✓  1 playwright-exercise-three.spec.ts:6:5 › translation test (4.3s)
+
+  1 passed (5.5s)
+```
+
+---
+
+### 7. playwright-exercise-four.spec.ts
+
+#### 1. To run the playwright-exercise-four.spec.ts:
+
+##### For Windows:
+
+###### 1. Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 4'
+npx playwright test --headed    
+```
+
+###### 2. Without Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\Playwright Exercise 4'
+npx playwright test
+```
+
+#### 2. Output of playwright-exercise-four.spec.ts With Headed
+
+```text
+
+Running 1 test using 1 worker
+
+  ✓  1 playwright-exercise-four.spec.ts:6:5 › drop down test (11.6s)
+
+  1 passed (12.6s)
 ```
