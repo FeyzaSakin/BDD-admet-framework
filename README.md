@@ -12,6 +12,8 @@ This repository contains exercises completed for the Part 2 paper internship ass
 * TypeScript Exercises:
     * `typescript-exercise-one.ts`: creates three compounds with their names and smiles
     * `typescript-exercise-two.ts`: shows an example of asynchronous execution
+* Playwright Exercises:
+    * `playwright-exercise.spec.ts`: verifies page titles at the Google and Gallaudet websites
 
 ---
 ## File Structure
@@ -22,9 +24,15 @@ BDD-admet-framework/
 │   ├── JavaScript Exercise/
 │   │   └── javascript-exercises.js
 │   │
-│   └── TypeScript Exercises/
-│       ├── typescript-exercise-one.ts
-│       └── typescript-exercise-two.ts
+│   ├── TypeScript Exercises/
+│   │   ├── typescript-exercise-one.ts
+│   │   └── typescript-exercise-two.ts
+│   │
+│   └── Playwright Exercises/
+│       ├── .gitignore
+│       ├── package.json
+│       ├── package-lock.json
+│       └── playwright-exercise.spec.ts
 │
 └── README.md
 ```
@@ -80,4 +88,36 @@ node '.\part2_paper_exercises\TypeScript Exercises\typescript-exercise-two.ts'
 
 ```text
 The molecule is aspirin.
+```
+
+---
+
+### 4. playwright-exercise.spec.ts
+
+#### 1. To run the playwright-exercise.spec.ts:
+
+##### For Windows:
+
+###### 1. Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\'
+npx playwright test --headed    
+```
+
+###### 2. Without Headed
+```text
+cd '.\part2_paper_exercises\Playwright Exercises\'
+npx playwright test
+```
+
+#### 2. Output of playwright-exercise.spec.ts With Headed
+
+```text
+
+Running 2 tests using 1 worker
+
+  ✓  1 playwright-exercise.spec.ts:6:5 › first test (1.8s)
+  ✓  2 playwright-exercise.spec.ts:15:5 › second test (4.0s)
+
+  2 passed (6.9s)
 ```
